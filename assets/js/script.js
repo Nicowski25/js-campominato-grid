@@ -4,11 +4,19 @@
 const playBtn = document.getElementById('playbtn')
 console.log(playBtn);
 
+//identifichiamo il form-select e prendiamo il valore che inserisce l'utente
+let difficultyInput = document.getElementById('difficulty').value
+console.log(difficultyInput);
 
-//impostiamo la grandezza
-const gridsize = 100;
-
-playBtn.addEventListener("click", game(gridsize))
+function setDifficulty(value) {
+    if (value == 1) {
+        return 49
+    } else if (value == 2) {
+        return 81
+    } else {
+        return 100
+    }
+}
 
 //creiamo la funzione onclick
 function game(boxSize) {
@@ -22,3 +30,5 @@ function game(boxSize) {
         console.log(i);    
     }
 }
+
+playBtn.addEventListener("click", game(setDifficulty(difficultyInput)))
