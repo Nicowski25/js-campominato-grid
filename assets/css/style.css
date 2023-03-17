@@ -6,6 +6,8 @@
 
 :root {
     --topbot: rgb(148, 141, 141);
+    --border: rgb(34, 34, 34);
+    --mainbg: rgb(50, 228, 183);
 }
 
 #site_header {
@@ -18,7 +20,18 @@
 
 #site_main {
     height: 80%;
+    background-color: var(--mainbg);
 }
+
+.box {
+    border: 1px solid ;
+    width: calc(100% / 15);
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 #site_footer {
     height: 10%;
