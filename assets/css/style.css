@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: ;
+}
+
+:root {
+    --topbot: rgb(148, 141, 141);
+}
+
+#site_header {
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--topbot);
+}
+
+#site_main {
+    height: 80%;
+}
+
+#site_footer {
+    height: 10%;
+    background-color: var(--topbot);
+    display: flex;
+    align-items: center;
+}
