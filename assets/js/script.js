@@ -31,19 +31,24 @@ function game() {
     }
 }
 
-playBtn.addEventListener("click", game())
-
-const boxEl = document.querySelectorAll('div.box')
-console.log(boxEl);
-
-for (let i = 0; i < boxEl.length; i++) {
-    const thisBox = boxEl[i];
-    console.log(thisBox);
-    thisBox.addEventListener('click', function() {
-        thisBox.classList.add('white')
+function boxColor() {
+    const boxEl = document.querySelectorAll('.box')
+    console.log(boxEl);
+    for (let i = 0; i < boxEl.length; i++) {
+        const thisBox = boxEl[i];
+        console.log(thisBox);
+        thisBox.addEventListener('click', function() {
+            thisBox.classList.toggle('white')
+        }
+        )
     }
-    )
 }
+
+playBtn.addEventListener('click', function() {
+    game()
+    boxColor()
+}    
+)
 
 
 
