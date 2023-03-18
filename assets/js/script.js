@@ -32,13 +32,14 @@ function game() {
 }
 
 function boxColor() {
-    const boxEl = document.querySelectorAll('.box')
-    console.log(boxEl);
-    for (let i = 0; i < boxEl.length; i++) {
-        const thisBox = boxEl[i];
-        console.log(thisBox);
+    const box = document.querySelectorAll('.box')
+    console.log(box);
+    for (let i = 0; i < box.length; i++) {
+        const thisBox = box[i];
+        const thisBoxValue = thisBox.innerHTML
         thisBox.addEventListener('click', function() {
             thisBox.classList.toggle('white')
+            console.log(thisBoxValue);
         }
         )
     }
