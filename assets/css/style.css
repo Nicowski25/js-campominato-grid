@@ -32,6 +32,13 @@
     justify-content: center;
 }
 
+.white {
+    background-color: white;
+}
+
+.acqua {
+    background-color: var(--mainbg);
+}
 
 #site_footer {
     height: 10%;
